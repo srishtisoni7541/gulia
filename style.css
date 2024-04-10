@@ -1,0 +1,524 @@
+:root{
+    --primary:rgb(3, 70, 109);
+    --secondary:rgb(21, 21, 21);
+    --tricolor:white;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* perspective: 200px; */
+}
+@font-face {
+    font-family: guilia1;
+    src: url(https://uploads-ssl.webflow.com/60db5e59f76ae577e9f50d42/60e4249bd8f95b37bea9f160_RoslindaleDisplayCondensed-Regular.woff2);
+}
+@font-face {
+    font-family: guilia2;
+    src: url(https://assets-global.website-files.com/60db5e59f76ae577e9f50d42/63600c288b483e9c7398616b_reel-transcode.mp4);
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary);
+}
+.page1nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: #1c1c1c3d; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4vw;
+}
+.page1navleft{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.page1nav .btn{
+    height: 3vw;
+    width: 10vw;
+    border: 1.5px solid var(--tricolor);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 1s;
+}
+.btn h1{
+    color: var(--tricolor);
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+.page1navcenter h1{
+    font-family: "guilia1";
+    color:var(--tricolor);
+    font-size: 2vw;
+}
+.page1navright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn:hover{
+    background-color: #ebeaea3e;
+}
+.video-container{
+    height: 80vh;
+    width: 90vw;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top:6vw;
+    left: 5vw;
+}
+.video-container video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.overlay-container{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.overlay-container h1{
+    font-family: "guilia2";
+    font-size: 6vw;
+    color: var(--tricolor);
+    font-weight: 400;
+}
+.elem{
+    overflow: hidden;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color:var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    padding-top: 3vw;
+    text-align: center;
+}
+.page2top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.page2 h2{
+    color: var(--tricolor);
+    font-family: "guilia2";
+    font-size: 5vw;
+}
+.img{
+    height: 7vw;
+    width: 6vw;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: url(https://assets-global.website-files.com/60db5e59f76ae577e9f50d42/61e939dee9c133675fbab858_Photo%20-%20Dolomites%20-%201-p-500.jpeg);
+    background-size: cover;
+    transition: all ease .5s;
+}
+.img:hover {
+scale:2;
+rotate: -7deg;
+}
+.page2bottom{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img1{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: url(https://assets-global.website-files.com/60db5e59f76ae577e9f50d42/61e939de8821f377935af4c3_Photo%20-%20Dolomites%20-%202-p-500.jpeg);
+    background-size: cover;
+    transition: all ease .5s;
+}
+.img1:hover{
+    scale:2;
+    rotate: 15deg;
+}
+.img3{
+    height: 7vw;
+    width: 10vw;
+    background-color: #fff;
+    border-radius: 12px;
+    background-image: url(https://assets-global.website-files.com/60db5e59f76ae577e9f50d42/61e939de360c7c91700e9743_Photo%20-%20Dolomites%20-%203.jpg);
+    background-size: cover;
+    transition: all ease .5s;
+}
+.img3:hover{
+    scale:2;
+    rotate:-20deg;
+
+}
+.page2 p{
+    color:var(--tricolor);
+    font-family: lato;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 5vw;
+}
+.page2 button{
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border:1px solid var(--tricolor);
+    background-color: transparent;
+    color: var(--tricolor);
+    margin-top: 2vw;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    gap: 5vw;
+    position: relative;
+}
+.page3nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.page3nav h5{
+    font-family: "guilia2";
+    color: var(--tricolor);
+    font-size: 1.5vw;
+    text-transform: capitalize;
+}
+.page3nav i{
+    color: #fff;
+    font-size: 2vw;
+    
+}
+.textnav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    /* height: 20vh;
+    width: 30vw; */
+}
+.page3 h1{
+    font-family: "guilia1";
+    font-size: 6vw;
+    color: var(--tricolor);
+    font-weight: 400;
+    line-height: 5vw;
+    text-transform: capitalize;
+}
+.page3 #button{
+    height: 3vw;
+    width: 13vw;
+    /* padding: 1vw 2w; */
+    border-radius: 50px;
+    border:1px solid var(--tricolor);
+    color: var(--tricolor);
+    background-color: transparent;
+    margin-left: 5vw;
+}
+.page3overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: -100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 4vw;
+}
+.page3imgleft{
+    height: 70vh;
+    width: 45vw;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/647e3cc83822b06137a15c00_Header%201%20Left-p-1080.jpg);
+    background-size: cover;
+}
+.page3imgright{
+    height: 70vh;
+    width: 45vw;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/647e3ccc6c2ce83328c9b669_Header%202%20Right-p-1080.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    gap: 5vw;
+    position: relative;
+}
+.page4nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.page4nav h5{
+    font-family: "guilia2";
+    color:var(--tricolor);
+    font-size: 1.5vw;
+    text-transform: capitalize;
+}
+.page4nav i{
+    color: var(--tricolor);
+    font-size: 2vw;
+    
+}
+.textnav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    /* height: 20vh;
+    width: 30vw; */
+}
+.page4 h1{
+    font-family: "guilia1";
+    font-size: 6vw;
+    color: var(--tricolor);
+    font-weight: 400;
+    line-height: 5vw;
+    text-transform: capitalize;
+}
+.page4 #button{
+    height: 3vw;
+    width: 13vw;
+    /* padding: 1vw 2vw; */
+    border-radius: 50px;
+    border:1px solid var(--tricolor);
+    color: var(--tricolor);
+    background-color: transparent;
+    margin-left: 5vw;
+}
+.page4overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: -100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 4vw;
+}
+.page4imgleft{
+    height: 70vh;
+    width: 45vw;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/636e58bc6814353894114eaa_follow-the-tracks-preview-left-p-800.jpg);
+    background-size: cover;
+}
+.page4imgright{
+    height: 70vh;
+    width: 45vw;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/636e58bec0125c0bb24a1993_follow-the-tracks-preview-right-p-800.jpg);
+    background-size: cover;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+.page5 h1{
+    color: var(--tricolor);
+    font-size: 6vw;
+    font-family: "guilia2";
+    font-weight: 400;
+    margin-top: 5vw;
+    text-transform: capitalize;
+    
+}
+.page5overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+
+
+}
+.page5imgcenter{
+    height: 70vh;
+    width: 60vw;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(https://assets-global.website-files.com/60eeb025115a75902b86a796/636012bd2248e8047dc4d4e4_amelia-cover-p-1080.jpg);
+    background-size: cover;
+    margin-left: -7vw;
+    z-index: 9;
+}
+.page5imgleft{
+    height: 25vh;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 20px;
+    left: 5vw;
+    /* margin-left: 3vw; */
+    position: relative;
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    z-index: 99;
+}
+.page5imgright{
+    height: 20vw;
+    width: 17vw;
+    background-color: #fff;
+    border-radius: 20px;
+    position:absolute;
+    left: 78vw;
+    top: -1vw;
+
+    background-image:url(./img2.jpg);
+    background-size: cover;
+}
+.imgtop{
+    height: 15vw;
+    width: 20vw;
+    position: absolute;
+    left: 55vw;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 99;
+    top: 28vw;
+    background-image: url(./img3.jpg);
+    background-size: cover;
+
+}
+.page6{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.page6btn{
+    height: 3vw;
+    width: 10vw;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--tricolor);
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    position: absolute;
+    left: 45vw;
+    top: 5vw;
+}
+.page6btn h1{
+    font-family: lato;
+    font-size: 1vw;
+    color: var(--tricolor);
+    text-transform: uppercase;
+
+}
+.page6text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 15vw;
+}
+
+.h1text{
+    height: 2.5vw;
+    width: 12vw;
+    /* background-color: #fff; */
+ 
+    overflow: hidden;
+ 
+    
+    
+}
+.h1text h1{
+    font-family: "guilia2";
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    margin-top: .6vw;
+    margin-left: .6vw;
+    color: var(--tricolor);
+}
+.page6textdiv{
+    height: 8vw;
+    width: 50vw;
+    border: 1px dashed var(--tricolor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page6textdiv h2{
+    font-size: 4.5vw;
+    color: var(--tricolor);
+    font-family: "guilia1";
+    transition: all ease 1s;
+}
+.page6textdiv:hover  h2{
+
+    scale:.9;
+}
